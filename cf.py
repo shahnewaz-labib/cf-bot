@@ -35,7 +35,7 @@ for k, v in sorted(data.items()):
     time_left = (then - now) - timedelta(hours=6)
     time_left_days = time_left.days
     time_left_hours = time_left.seconds // 3600
-    time_left_minutes = (time_left.seconds - time_left_hours * 1600) // 60
+    time_left_minutes = (time_left.seconds - time_left_hours * 3600) // 60
     # print(ts, time_left.days, time_left.seconds // 60, datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'), v)
 
     print(f"{Fore.CYAN}[+] {time_left_days} days, {time_left_hours} hours, {time_left_minutes} minutes till ------- {v}")

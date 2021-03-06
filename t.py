@@ -1,3 +1,5 @@
-# import colorama
+from datetime import datetime, timedelta
 
-print('\033[31m' + 'test')
+time = timedelta(hours=50)
+
+print(f"{time} == {time.days} days, {time.seconds} seconds")

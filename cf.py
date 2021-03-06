@@ -3,6 +3,8 @@ import colorama
 from datetime import datetime, timedelta
 from colorama import Fore, Back, Style
 
+import matplotlib.pyplot as plt
+
 now = datetime.now()
 
 def init():
@@ -39,3 +41,28 @@ def showContestList(data):
         # print(ts, time_left.days, time_left.seconds // 60, datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'), v)
         print(f"{Fore.CYAN}[+] {time_left_days} days, {time_left_hours} hours, {time_left_minutes} minutes till ------- {v}")
     
+
+def getUserRating(handle):
+    response = requests.get(f'https://codeforces.com/api/user.rating?handle={handle}').json()
+    return response
+
+def getXandY(response):
+    x = []
+    y = []
+    temp = 1
+    for contest in response['result']:
+        x.append(contest['newRating'])
+        y.append(contest['ratingUpdateTimeSeconds'] / temp)
+    return x, y
+
+
+def plot(x, y, handle):
+    plt.title(handle + "'s Rating over time")
+    plt.xlabel("Time")
+    plt.ylabel("Rating")
+    plt.plot(y, x)
+    plt.show()
+
+
+def getHandle():
+    return str(input("Enter handle: "))

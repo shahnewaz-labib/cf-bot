@@ -38,5 +38,4 @@ def showContestList(data):
         time_left_minutes = (time_left.seconds - time_left_hours * 3600) // 60
         # print(ts, time_left.days, time_left.seconds // 60, datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'), v)
         print(f"{Fore.CYAN}[+] {time_left_days} days, {time_left_hours} hours, {time_left_minutes} minutes till ------- {v}")
-        # print(f"{v} in {time_left_days} days, {time_left_hours} hours, {time_left_minutes} minutes.")
     

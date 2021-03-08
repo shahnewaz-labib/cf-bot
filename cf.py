@@ -25,9 +25,9 @@ def getContestList(response):
     for contest in response['result']:
         if contest['phase'] == "BEFORE" and contest['type'] == "CF":
             # print(contest['name'], contest['startTimeSeconds'])
-            a = contest['name']
-            b = contest['startTimeSeconds']
-            data[b] = a
+            name = contest['name']
+            time = contest['startTimeSeconds']
+            data[time] = name
     return data
 
 def showContestList(data):

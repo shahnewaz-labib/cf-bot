@@ -57,10 +57,11 @@ def getXandY(response):
 
 
 def plot(x, y, handle):
+    plt.figure(figsize=(12, 6))
     plt.title(handle + "'s Rating over time")
     plt.xlabel("Time")
     plt.ylabel("Rating")
-    plt.plot(y, x)
+    plt.plot(y, x, linestyle='--', color='r', marker='o')
     plt.show()
 
 

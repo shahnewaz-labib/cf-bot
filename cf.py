@@ -23,7 +23,7 @@ def getContestInfo(isGym):
 def getContestList(response):
     data = {}
     for contest in response['result']:
-        if contest['phase'] == "BEFORE" and contest['type'] == "CF":
+        if contest['phase'] == "BEFORE":
             # print(contest['name'], contest['startTimeSeconds'])
             name = contest['name']
             time = contest['startTimeSeconds']

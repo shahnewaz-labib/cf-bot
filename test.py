@@ -1,10 +1,10 @@
 from cf import *
+import requests
+import pprint
 
 def main():
-    handle = getHandle()
-    response = getUserRating(handle)
-    x, y = getXandY(response)
-    plot(x, y, handle)
+    response = requests.get('https://codeforces.com/api/user.info?handles=DmitriyH;Fefer_Ivan').json()
+    pprint.pprint(response)
     
 
 if __name__ == '__main__':

@@ -1,0 +1,109 @@
+{
+    "status": "OK",
+    "result": [
+        {
+            "id": 156733222,
+            "contestId": 1676,
+            "creationTimeSeconds": 1652200446,
+            "relativeTimeSeconds": 6546,
+            "problem": {
+                "contestId": 1676,
+                "index": "F",
+                "name": "Longest Strike",
+                "type": "PROGRAMMING",
+                "tags": [
+                    "data structures",
+                    "greedy",
+                    "implementation",
+                    "sortings",
+                    "two pointers"
+                ]
+            },
+            "author": {
+                "contestId": 1676,
+                "members": [
+                    {
+                        "handle": "_labib"
+                    }
+                ],
+                "participantType": "CONTESTANT",
+                "ghost": false,
+                "startTimeSeconds": 1652193900
+            },
+            "programmingLanguage": "GNU C++17",
+            "testset": "TESTS",
+            "passedTestCount": 11,
+            "timeConsumedMillis": 499,
+            "memoryConsumedBytes": 13516800
+        },
+        {
+            "id": 156730945,
+            "contestId": 1676,
+            "creationTimeSeconds": 1652200238,
+            "relativeTimeSeconds": 6338,
+            "problem": {
+                "contestId": 1676,
+                "index": "F",
+                "name": "Longest Strike",
+                "type": "PROGRAMMING",
+                "tags": [
+                    "data structures",
+                    "greedy",
+                    "implementation",
+                    "sortings",
+                    "two pointers"
+                ]
+            },
+            "author": {
+                "contestId": 1676,
+                "members": [
+                    {
+                        "handle": "_labib"
+                    }
+                ],
+                "participantType": "CONTESTANT",
+                "ghost": false,
+                "startTimeSeconds": 1652193900
+            },
+            "programmingLanguage": "GNU C++17",
+            "verdict": "WRONG_ANSWER",
+            "testset": "TESTS",
+            "passedTestCount": 1,
+            "timeConsumedMillis": 15,
+            "memoryConsumedBytes": 102400
+        },
+        {
+            "id": 156711003,
+            "contestId": 1676,
+            "creationTimeSeconds": 1652198464,
+            "relativeTimeSeconds": 4564,
+            "problem": {
+                "contestId": 1676,
+                "index": "E",
+                "name": "Eating Queries",
+                "type": "PROGRAMMING",
+                "tags": [
+                    "binary search",
+                    "greedy",
+                    "sortings"
+                ]
+            },
+            "author": {
+                "contestId": 1676,
+                "members": [
+                    {
+                        "handle": "_labib"
+                    }
+                ],
+                "participantType": "CONTESTANT",
+                "ghost": false,
+                "startTimeSeconds": 1652193900
+            },
+            "programmingLanguage": "GNU C++17",
+            "testset": "TESTS",
+            "passedTestCount": 14,
+            "timeConsumedMillis": 873,
+            "memoryConsumedBytes": 2355200
+        }
+    ]
+}
